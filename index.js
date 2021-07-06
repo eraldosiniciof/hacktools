@@ -14,6 +14,10 @@ app.get('/create', (req, res) => {
   res.sendFile(path.join(`${__dirname}/src/create/index.html`))
 })
 
+app.get('/response', (req, res) => {
+  res.sendFile(path.join(`${__dirname}/src/response/index.html`))
+})
+
 app.listen(port, () => {
   console.log(`Servidor na porta ${port}`)
 })

@@ -1,4 +1,5 @@
 const ul = document.querySelector('#list ul')
+const questions = []
 
 document.querySelector('#register').addEventListener('click', () => {
   const text = document.querySelector('#question')
@@ -19,6 +20,8 @@ document.querySelector('#register').addEventListener('click', () => {
   liElement.appendChild(btnRemove)
   ul.appendChild(liElement)
 
+  questions.push(text.value)
+
   text.value = ''
   text.focus()
 })
@@ -30,6 +33,10 @@ document.querySelector('#list').addEventListener('click', (event) => {
   if (target.textContent === 'Remover') {
     if (confirm(`Você deseja excluir "${description}" ?`)) {
       ul.removeChild(child)
+      const pos = questions.indexOf(description)
+      questions.splice(pos, 1)
     }
   }
 })
+
+document.querySelector('#finish').addEventListener('click', () => {})

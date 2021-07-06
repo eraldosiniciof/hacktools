@@ -1,5 +1,5 @@
 {
-  "name": "hackTools",
+  "name": "hacktools",
   "version": "0.0.0",
   "description": "Criar Questionarios",
   "main": "index.js",
@@ -15,6 +15,7 @@
   "private": true,
   "dependencies": {
     "express": "^4.17.1",
+    "fs": "^0.0.1-security",
     "path": "^0.12.7"
   },
   "devDependencies": {
