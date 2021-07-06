@@ -8,6 +8,16 @@
     "email": "eraldosicio@gmail.com",
     "github": "github.com/eraldosiniciof"
   },
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
 }
