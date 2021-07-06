@@ -62,3 +62,17 @@ input:hover {
 
   padding: 10px;
 }
+
+@media screen and (max-width: 1050px) {
+  .options {
+    flex-direction: column;
+  }
+
+  input {
+    height: 60px;
+  }
+
+  .list li {
+    text-align: center;
+  }
+}
