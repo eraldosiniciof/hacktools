@@ -1,0 +1,13 @@
+{
+  "name": "hackTools",
+  "version": "0.0.0",
+  "description": "Criar Questionarios",
+  "main": "index.js",
+  "author": {
+    "name": "Eraldo Sinicio",
+    "email": "eraldosicio@gmail.com",
+    "github": "github.com/eraldosiniciof"
+  },
+  "license": "MIT",
+  "private": true
+}
