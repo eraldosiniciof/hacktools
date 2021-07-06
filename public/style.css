@@ -20,11 +20,14 @@
 }
 
 .options {
+  margin-top: 30px;
+
   display: flex;
   justify-content: center;
 }
 
-input {
+.btnOptions,
+.btnOptionsSmall {
   margin-top: 40px;
 
   width: 200px;
@@ -41,7 +44,8 @@ input {
   transition: 0.5s;
 }
 
-input:hover {
+.btnOptions:hover,
+.btnOptionsSmall:hover {
   background-color: #ffffff;
 
   border: 1px solid #583673;
@@ -53,6 +57,13 @@ input:hover {
   cursor: pointer;
 }
 
+.btnOptionsSmall {
+  margin-top: 0;
+  font-size: 1em;
+  width: 150px;
+  height: 45px;
+}
+
 .list {
   margin-top: 40px;
 }
@@ -61,6 +72,25 @@ input:hover {
   text-align: left;
 
   padding: 10px;
+
+  list-style: none;
+}
+
+p {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.questions {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+span {
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1050px) {
