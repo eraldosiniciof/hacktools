@@ -2,26 +2,20 @@
   color: #583673;
   text-align: center;
   font-family: sans-serif;
-
   margin: auto;
 }
 
 .main {
   margin-top: 15px;
-
   padding: 10px;
-
-  width: 40%;
+  width: 60%;
   height: 80%;
-
   border-radius: 10px;
-
   background-color: #ffffffa9;
 }
 
 .options {
   margin-top: 30px;
-
   display: flex;
   justify-content: center;
 }
@@ -29,16 +23,12 @@
 .btnOptions,
 .btnOptionsSmall {
   margin-top: 40px;
-
   width: 200px;
   height: 150px;
-
   font-size: 1.3em;
   font-weight: bold;
-
   border: 0;
   border-radius: 8px;
-
   background-color: #583673;
   color: #ffffff;
   transition: 0.5s;
@@ -47,13 +37,9 @@
 .btnOptions:hover,
 .btnOptionsSmall:hover {
   background-color: #ffffff;
-
   border: 1px solid #583673;
-
   color: #583673;
-
   font-weight: bold;
-
   cursor: pointer;
 }
 
@@ -68,18 +54,14 @@
   margin-top: 40px;
 }
 
-.list li {
-  text-align: left;
-
-  padding: 10px;
-
-  list-style: none;
-}
-
-p {
-  text-align: left;
+li {
   display: flex;
-  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  background-color: rgb(224, 224, 224);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 4px;
 }
 
 .questions {
@@ -89,8 +71,34 @@ p {
 }
 
 span {
+  word-wrap: break-word;
+  text-align: left;
+  display: block;
+  width: 90%;
   font-size: 1.3em;
   font-weight: bold;
+}
+.head {
+  display: flex;
+  margin-top: 35px;
+}
+
+.title {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.btnRemove {
+  background-color: rgb(255, 147, 147);
+  border: 0;
+  padding: 6px;
+  border-radius: 4px;
+  color: black;
+}
+
+.btnRemove:active {
+  box-shadow: 2px 2px 2px black;
 }
 
 @media screen and (max-width: 1050px) {
@@ -104,5 +112,26 @@ span {
 
   .list li {
     text-align: center;
+  }
+
+  .head {
+    flex-direction: column;
+  }
+
+  .title {
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+  .btnOptionsSmall {
+    margin-top: 10px;
+  }
+
+  span {
+    width: 73%;
+  }
+
+  .questions {
+    width: 90%;
   }
 }
